@@ -32,7 +32,7 @@ We present **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework
 On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. It supports both prompting and supervised fine-tuning; our SFT-only models reach 30% (4B) and 53% (30B).
 
 <p align="center">
-  <img width="100%" src="./assets/performance.png">
+  <img width="100%" src="./assets/overview.png">
 </p>
 
 
@@ -49,10 +49,10 @@ On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute i
 
 Code and checkpoints are **coming soon (pending approval)**. 
 
-|            Model            |                                                                           Download Links                                                                           | Model Size | Context Length |
-| :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: | :------------: |
-| Re-TRAC-SFT-30B | [🤗 HuggingFace]([TODO: hf_url_30b])<br> *Coming soon* |  30B   |      [TODO]      |
-| Re-TRAC-SFT-4B | [🤗 HuggingFace]([TODO: hf_url_4b])<br> *Coming soon* |  4B   |      [TODO]      |
+|            Model            |                                                                           Download Links                                                                           | Model Size |
+| :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
+| Re-TRAC-SFT-30B | [🤗 HuggingFace]([])<br> *Coming soon* |  30B   |
+| Re-TRAC-SFT-4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
 
 # News
 
