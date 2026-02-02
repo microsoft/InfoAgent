@@ -10,7 +10,7 @@
 
 
 ## News
-* `[2026-2-3]`:🔥We release the RE-TRAC-4B ([release](https://huggingface.co/)).
+* `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
 
 
 ## Uses
