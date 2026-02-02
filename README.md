@@ -1,14 +1,17 @@
 # InfoAgent
-[InfoAgent](https://arxiv.org/abs/2509.25189) is a deep research agent designed to autonomously seek information and reason over long horizons.
+
+> You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/).
+
+> 🔥Stay tuned for more updates!
+
+- [**RE-TRAC**](retrac) (Preprint 2026) - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents
+- **InfoAgent** (Preprint 2025) - InfoAgent: Advancing Autonomous Information-Seeking Agents
+
+
 
 ## News
-* `[2026-2-3]`:🔥We release the [RE-TRAC](retrac/README.md) for deep research!
+* `[2026-2-3]`:🔥We release the RE-TRAC-4B ([release](https://huggingface.co/)).
 
-## Model Details
-
-- **Model type:** Language Model  
-- **Language(s):** English  
-- **License:** MIT  
 
 ## Uses
 
