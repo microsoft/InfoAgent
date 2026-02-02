@@ -14,12 +14,13 @@
 * `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/) paper
     > **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. <br>It supports both prompting and supervised fine-tuning, our SFT-only models reach **30% (4B) and 53% (30B)**.<br>(see detail in [RE-TRAC](retrac/README.md))
     ![Re-TRAC Overview](./retrac/assets/overview.png)
-Comprehensive evaluation results across multiple benchmarks:
 * `[2025-9-29]` We release [InfoAgent](https://arxiv.org/abs/2509.25189) paper.
 
 
 
-## Model Preperformance
+## Model Performance
+
+Comprehensive evaluation results across multiple benchmarks:
 
 | Model | BrowseComp | BrowseComp-zh | GAIA | XBench | HLE |
 |-------|------------|---------------|------|--------|-----|
