@@ -25,7 +25,7 @@
 <!-- > [!NOTE]
 > This demo is for quick exploration only. Response times may vary or fail intermittently due to model latency and tool QPS limits. For a stable experience we recommend local deployment. -->
 
-# Introduction
+## Introduction
 
 We present **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. Instead of treating rollouts as independent, Re-TRAC compresses each trajectory into an explicit state (e.g., evidence, uncertainties, failure modes, frontier candidates) and conditions the next rollout on it. This state-guided process supports more efficient search and broader exploration across rollouts.
 
@@ -45,7 +45,7 @@ On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute i
 - 🚀 **Multiple Training Paradigms**: Supports both prompting-based and supervised fine-tuning approaches, with checkpoints available for 4B and 30B models.
 - 💾 **Token-Efficient**: Maintains rich information transfer across rollouts while staying within the same token budget constraints.
 
-# Model Download
+## Model Download
 
 Code and checkpoints are **coming soon (pending approval)**. 
 
@@ -60,9 +60,9 @@ Code and checkpoints are **coming soon (pending approval)**.
 
 <!-- [2025/XX/XX]🔥 We have released **Re-TRAC-SFT-30B** and **Re-TRAC-SFT-4B** checkpoints. -->
 
-# Benchmark Results
+## Benchmark Results
 
-## Main Results
+### Main Results
 
 Comprehensive evaluation results across multiple benchmarks:
 
@@ -103,7 +103,7 @@ Comprehensive evaluation results across multiple benchmarks:
   <img width="100%" src="./assets/prompting_results.png">
 </p> -->
 
-# Code and Resources
+## Code and Resources
 
 Code and resources are **coming soon (pending approval)**. We are finalizing internal release approval for:
 
@@ -117,7 +117,7 @@ If you want updates, please **Star / Watch** this repository!
 
 
 
-# Citation
+## Citation
 
 If you find Re-TRAC useful in your research, please cite our paper:
 
@@ -127,10 +127,17 @@ If you find Re-TRAC useful in your research, please cite our paper:
 }
 ```
 
-# License
+## Microsoft Privacy Statement
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Plese refer to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-# Contact
 
-For questions, issues, or collaboration inquiries, please open an issue on GitHub or contact [TODO: Add contact information].
+## License
+
+- MIT License.
+
+
+## Contact
+
+For questions, issues, or collaboration inquiries, please open an issue on GitHub or contact us by email.
+- Kai Qiu - kaqiu@microsoft.com  
