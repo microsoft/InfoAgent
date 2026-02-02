@@ -54,9 +54,9 @@ Code and checkpoints are **coming soon (pending approval)**.
 | Re-TRAC-SFT-30B | [🤗 HuggingFace]([])<br> *Coming soon* |  30B   |
 | Re-TRAC-SFT-4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
 
-# News
+<!-- # News
 
-[2025/XX/XX]🚀 Re-TRAC paper released on arXiv.
+[2025/XX/XX]🚀 Re-TRAC paper released on arXiv. -->
 
 <!-- [2025/XX/XX]🔥 We have released **Re-TRAC-SFT-30B** and **Re-TRAC-SFT-4B** checkpoints. -->
 
