@@ -20,7 +20,9 @@
 🤗 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">HuggingFace(comming soon)</a> ｜
 💻 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">GitHub</a> | 
 📑 <a href="https://arxiv.org/abs/todo">Paper</a> | 
-🌐 <a href="[TODO: project_url]">Demo</a>
+🌐 <a href="https://huggingface.co/spaces/JialiangZhu/RE-TRAC">Demo</a>
+
+> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now 
 
 <!-- > [!NOTE]
 > This demo is for quick exploration only. Response times may vary or fail intermittently due to model latency and tool QPS limits. For a stable experience we recommend local deployment. -->
@@ -32,10 +34,12 @@ We present **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework
 On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. It supports both prompting and supervised fine-tuning; our SFT-only models reach 30% (4B) and 53% (30B).
 
 <p align="center">
-  <img width="100%" src="./assets/overview.png">
+  <img width="90%" src="./assets/overview.png">
 </p>
 
-
+<p align="center">
+  <img width="90%" src="./assets/model_preformace.png">
+</p>
 
 ## Features
 
