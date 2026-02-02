@@ -1,16 +1,45 @@
-# InfoAgent
+# Microsoft InfoAgent Series
 
 > You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/).
 
 > 🔥Stay tuned for more updates!
 
-- [**RE-TRAC**](retrac) (Preprint 2026) - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents
+- [**RE-TRAC**](retrac/README.md) (Preprint 2026) - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents
 - **InfoAgent** (Preprint 2025) - InfoAgent: Advancing Autonomous Information-Seeking Agents
 
 
 
 ## News
 * `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
+* `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/) paper
+    > **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. <br>It supports both prompting and supervised fine-tuning, our SFT-only models reach **30% (4B) and 53% (30B)**.<br>(see detail in [RE-TRAC](retrac/README.md))
+    ![Re-TRAC Overview](./retrac/assets/overview.png)
+Comprehensive evaluation results across multiple benchmarks:
+* `[2025-9-29]` We release [InfoAgent](https://arxiv.org/abs/2509.25189) paper.
+
+
+
+## Model Preperformance
+
+| Model | BrowseComp | BrowseComp-zh | GAIA | XBench | HLE |
+|-------|------------|---------------|------|--------|-----|
+| Claude-4.5-Sonnet | 24.1 | 42.4 | 71.2 | 66.0 | 32.0 |
+| o3 | 49.7 | 58.1 | 70.5 | 66.7 | 24.9 |
+| OpenAI DeepResearch | 51.5 | 42.9 | 67.4 | - | 26.6 |
+| GPT-5-high | 54.9 | 63.0 | 76.7 | 77.9 | 42.0 |
+| Gemini-3-pro | 37.8 | 51.6 | 74.8 | - | 38.3 |
+| Kimi-K2-Thinking-1T | 60.2 | 62.3 | - | - | 51.0 |
+| DeepSeek-V3.2-Thinking-685B | 67.6 | 65.0 | - | - | 40.8 |
+| GLM-4.7-358B | 52.0 | 66.6 | - | - | 42.8 |
+| MiniMax-M2-229B | 44.0 | 48.5 | 75.7 | 72.0 | 31.8 |
+| Tongyi-DeepResearch-30B-A3B | 43.4 | 46.7 | 70.9 | 75.0 | **32.9** |
+| IterResearch-30B-A3B | 37.3 | 45.2 | 72.8 | - | 28.8 |
+| WebSailor-V2-30B-A3B (RL) | 35.3 | 44.1 | 74.1 | 73.7 | 30.6 |
+| AgentCPM-Explore-4B | 25.0 | 29.0 | 63.9 | 70.0 | 19.1 |
+| NestBrowse-4B | 22.4 | 28.4 | 68.9 | 74.0 | - |
+| **InfoAgent-14B** | 15.3 | 29.2 | - | 40.4 | - |
+| **RE-TRAC-4B(SFT only)** | **30.0** | **36.1** | **70.4** | **76.6** | **22.2** |
+| **RE-TRAC-30B-A3B(SFT only)** | **53.0** | **57.3** | **78.2** | **83.0** | 31.5 |
 
 
 ## Uses
