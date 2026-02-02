@@ -141,3 +141,4 @@ If you find Re-TRAC useful in your research, please cite our paper:
 
 For questions, issues, or collaboration inquiries, please open an issue on GitHub or contact us by email.
 - Kai Qiu - kaqiu@microsoft.com  
+- Jialiang Zhu - jialiangzhu@seu.edu.cn

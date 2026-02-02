@@ -50,6 +50,3 @@
 
 - Plese refer to [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
-## Model Card Contact
-
-- Kai Qiu - kaqiu@microsoft.com  
