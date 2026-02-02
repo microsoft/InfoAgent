@@ -17,9 +17,9 @@
 
 </div>
 <p align="center">
-🤗 <a href="[TODO: hf_url]" target="_blank">HuggingFace</a> ｜
-💻 <a href="[TODO: repo_url]" target="_blank">GitHub</a> | 
-📑 <a href="[TODO: arxiv_url]">Paper</a> | 
+🤗 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">HuggingFace(comming soon)</a> ｜
+💻 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">GitHub</a> | 
+📑 <a href="https://arxiv.org/abs/todo">Paper</a> | 
 🌐 <a href="[TODO: project_url]">Demo</a>
 
 <!-- > [!NOTE]
@@ -68,7 +68,7 @@ Comprehensive evaluation results across multiple benchmarks:
 
 | Model | BrowseComp | BrowseComp-zh | GAIA | XBench | HLE |
 |-------|------------|---------------|------|--------|-----|
-| **Closed** | | | | | |
+| **Closed Model** | | | | | |
 | Claude-4.5-Sonnet | 24.1 | 42.4 | 71.2 | 66.0 | 32.0 |
 | o3 | 49.7 | 58.1 | 70.5 | 66.7 | 24.9 |
 | OpenAI DeepResearch | 51.5 | 42.9 | 67.4 | - | 26.6 |
