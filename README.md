@@ -1,12 +1,10 @@
 # InfoAgent
+[InfoAgent](https://arxiv.org/abs/2509.25189) is a deep research agent designed to autonomously seek information and reason over long horizons.
 
-
+## News
+* `[2026-2-3]`:🔥We release the [RE-TRAC](retrac/README.md) for deep research!
 
 ## Model Details
-
-### Model Description
-
-InfoAgent is a deep research agent designed to autonomously seek information and reason over long horizons. It leverages a novel data synthesis pipeline and orchestrated web search tools, enabling it to solve complex, multi-step queries by interacting with external resources. The model is post-trained from Qwen3-14B using a two-stage process: supervised fine-tuning to instill long-horizon search behaviors, followed by reinforcement learning to enhance reasoning-driven tool use. [1](https://office.com?path=b1abcdd0-59df-4b9f-904e-081f55075c63)
 
 - **Model type:** Language Model  
 - **Language(s):** English  
