@@ -11,6 +11,7 @@
 
 ## News
 * `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
+* `[2026-2-3]`:🔥We release [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo 
 * `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/2602.02486) paper
     > **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. <br>It supports both prompting and supervised fine-tuning, our SFT-only models reach **30% (4B) and 53% (30B)**.<br>Find more details in [RE-TRAC](retrac/README.md)
     ![Re-TRAC Overview](./retrac/assets/overview.png)
