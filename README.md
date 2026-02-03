@@ -1,6 +1,6 @@
 # Microsoft InfoAgent Series
 
-> You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/).
+> You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/2602.02486).
 > <br> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now 
 > <br>🔥Stay tuned for more updates!
 
@@ -11,7 +11,7 @@
 
 ## News
 * `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
-* `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/) paper
+* `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/2602.02486) paper
     > **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. <br>It supports both prompting and supervised fine-tuning, our SFT-only models reach **30% (4B) and 53% (30B)**.<br>Find more details in [RE-TRAC](retrac/README.md)
     ![Re-TRAC Overview](./retrac/assets/overview.png)
     ![Model Performance](./retrac/assets/model_preformace.png)
@@ -79,6 +79,30 @@ Comprehensive evaluation results across multiple benchmarks:
 
 - Evaluated on public benchmarks: BrowseComp, BrowseComp-ZH, Xbench-DS. 
 - Metrics include accuracy (%), tool call distribution, recall rates, and context length usage.
+
+## Citation
+If you find our works useful in your research, please cite our paper:
+```bibtex
+@misc{zhu2026retracrecursivetrajectorycompression,
+      title={RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents}, 
+      author={Jialiang Zhu and Gongrui Zhang and Xiaolong Ma and Lin Xu and Miaosen Zhang and Ruiqi Yang and Song Wang and Kai Qiu and Zhirong Wu and Qi Dai and Ruichun Ma and Bei Liu and Yifan Yang and Chong Luo and Zhengyuan Yang and Linjie Li and Lijuan Wang and Weizhu Chen and Xin Geng and Baining Guo},
+      year={2026},
+      eprint={2602.02486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.02486}, 
+}
+@misc{zhang2025infoagentadvancingautonomousinformationseeking,
+      title={InfoAgent: Advancing Autonomous Information-Seeking Agents}, 
+      author={Gongrui Zhang and Jialiang Zhu and Ruiqi Yang and Kai Qiu and Miaosen Zhang and Zhirong Wu and Qi Dai and Bei Liu and Chong Luo and Zhengyuan Yang and Linjie Li and Lijuan Wang and Weizhu Chen and Yuan Zhang and Xin Li and Zhaoyi Liu and Xin Geng and Baining Guo},
+      year={2025},
+      eprint={2509.25189},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2509.25189}, 
+}
+```
+
 
 ## License
 
