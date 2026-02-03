@@ -1,7 +1,7 @@
 # Microsoft InfoAgent Series
 
 > You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/2602.02486).
-> <br> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now 
+> <br> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) demo now 
 > <br>🔥Stay tuned for more updates!
 
 - [**RE-TRAC**](retrac/README.md) (Preprint 2026) - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents
@@ -11,7 +11,7 @@
 
 ## News
 * `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
-* `[2026-2-3]`:🔥We release [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo 
+* `[2026-2-3]`:🔥We release [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) demo 
 * `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/2602.02486) paper
     > **Re-TRAC (REcursive TRajectory Compression)**, a recursive framework for deep research agents that enables cross-trajectory exploration via structured state compression. On BrowseComp, Re-TRAC outperforms ReAct-style baselines by +15–20% absolute improvement. <br>It supports both prompting and supervised fine-tuning, our SFT-only models reach **30% (4B) and 53% (30B)**.<br>Find more details in [RE-TRAC](retrac/README.md)
     ![Re-TRAC Overview](./retrac/assets/overview.png)
