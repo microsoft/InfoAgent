@@ -19,7 +19,7 @@
 <p align="center">
 🤗 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">HuggingFace(comming soon)</a> ｜
 💻 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">GitHub</a> | 
-📑 <a href="https://arxiv.org/abs/todo">Paper</a> | 
+📑 <a href="https://arxiv.org/abs/2602.02486">Paper</a> | 
 🌐 <a href="https://huggingface.co/spaces/JialiangZhu/RE-TRAC">Demo</a>
 
 > You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now 
@@ -126,8 +126,14 @@ If you want updates, please **Star / Watch** this repository!
 If you find Re-TRAC useful in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{retrac2026,
-  title={Re-TRAC: Recursive Trajectory Compression for Deep Research Agents},
+@misc{zhu2026retracrecursivetrajectorycompression,
+      title={RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents}, 
+      author={Jialiang Zhu and Gongrui Zhang and Xiaolong Ma and Lin Xu and Miaosen Zhang and Ruiqi Yang and Song Wang and Kai Qiu and Zhirong Wu and Qi Dai and Ruichun Ma and Bei Liu and Yifan Yang and Chong Luo and Zhengyuan Yang and Linjie Li and Lijuan Wang and Weizhu Chen and Xin Geng and Baining Guo},
+      year={2026},
+      eprint={2602.02486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2602.02486}, 
 }
 ```
 
