@@ -7,8 +7,8 @@
 📑 <a href="https://arxiv.org/abs/2602.02486">Paper</a> | 
 🌐 <a href="https://huggingface.co/spaces/JialiangZhu/RE-TRAC">Demo</a>
 
-> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now <br>
-> We have released [Re-TRAC-SFT-30B](https://huggingface.co/microsoft/InfoAgent) checkpoint.
+> You Can Try our [RE-TRAC 30B-A3B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now <br>
+> We have released [Re-TRAC 30B-A3B](https://huggingface.co/microsoft/InfoAgent) checkpoint.
 
 ## Introduction
 
@@ -38,8 +38,8 @@ Code and checkpoints are **coming soon (pending approval)**.
 
 |            Model            |                                                                           Download Links                                                                           | Model Size |
 | :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
-| Re-TRAC-SFT-30B | [🤗 HuggingFace](https://huggingface.co/microsoft/InfoAgent)<br> |  30B   |
-| Re-TRAC-SFT-4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
+| Re-TRAC 30B-A3B | [🤗 HuggingFace](https://huggingface.co/microsoft/InfoAgent)<br> |  30B   |
+| Re-TRAC 4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
 
 
 ## Benchmark Results
