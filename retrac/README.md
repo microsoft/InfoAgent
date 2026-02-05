@@ -38,7 +38,7 @@ Code and checkpoints are **coming soon (pending approval)**.
 
 |            Model            |                                                                           Download Links                                                                           | Model Size |
 | :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
-| Re-TRAC-SFT-30B | [🤗 HuggingFace]([https://huggingface.co/microsoft/InfoAgent])<br> |  30B   |
+| Re-TRAC-SFT-30B | [🤗 HuggingFace](https://huggingface.co/microsoft/InfoAgent)<br> |  30B   |
 | Re-TRAC-SFT-4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
 
 
