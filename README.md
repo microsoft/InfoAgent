@@ -1,7 +1,8 @@
 # Microsoft InfoAgent Series
 
 > You can check the paper of [InfoAgent](https://arxiv.org/abs/2509.25189) and [RE-TRAC](https://arxiv.org/abs/2602.02486).
-> <br> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) demo now 
+> <br> 🔥You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) demo now 
+> <br>  🚀 We release [Re-TRAC-SFT-30B](https://huggingface.co/microsoft/InfoAgent) checkpoint.
 > <br>🔥Stay tuned for more updates!
 
 - [**RE-TRAC**](retrac/README.md) (Preprint 2026) - RE-TRAC: REcursive TRAjectory Compression for Deep Search Agents
@@ -10,6 +11,7 @@
 
 
 ## News
+* `[2026-2-5]`: 🚀We release [Re-TRAC-SFT-30B](https://huggingface.co/microsoft/InfoAgent) checkpoint.
 * `[2026-2-3]`:🔥We plan to release RE-TRAC-4B and RE-TRAC-30B-A3B. Stay tuned!
 * `[2026-2-3]`:🔥We release [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) demo 
 * `[2026-2-3]`:🔥We release [RE-TRAC](https://arxiv.org/abs/2602.02486) paper

@@ -1,0 +1,11 @@
+gradio
+pyyaml
+python-dotenv
+langgraph
+langchain
+langchain-core
+langchain-openai
+pydantic
+typing-extensions
+aiohttp
+openai

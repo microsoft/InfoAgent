@@ -1,0 +1,54 @@
+max_turns: 1000
+max_steps: 10000
+max_cycles: 8
+system_prompt: |
+  You are a helpful assistant that can use the **search** tool to search the internet and the **visit** tool to visit the web pages. You will be given an question and you need to answer it.
+continue_prompt: |
+  Below is the summary from the previous attempt:
+  {last_summary}
+  1. Critical Evaluation:
+    The summary provided above is a *suggested* synthesis of past efforts, not an absolute truth. It may contain hallucinations, unverified assumptions, or premature conclusions. You are encouraged to:
+    - Identify and ignore any parts of the summary that seem illogical or poorly supported.
+    - If the summary's quality is low or its direction feels like a dead-end, you have the full autonomy to completely disregard it and initiate a fresh search strategy.
+  2. Expand the search space:
+    If the task remains unsolved, it means the current search space is insufficient. Do not get trapped in the "logic loop" of the summary. Use the [Uncertainties, Limitations, Gaps] section as a springboard to:
+    - Pivot to entirely different keyword clusters or tool-call strategies.
+    - Cross-verify "Facts" that were marked as "unverified" or "partial" in the summary.
+  3. Autonomous re-planning:
+    The summary provides the *memory*, but you provide the *reasoning*. Based on the existing facts and your own judgment of the current situation, determine your own next steps.
+  Now continue your deep search task. You have full permission to be skeptical of the past and bold in your current exploration.
+summary_prompt: |
+  Summary the trajectory above for the original question you are given: {input}.
+  CRITICAL OUTPUT FORMAT REQUIREMENTS (STRICT)
+  You MUST follow the exact format below. Do NOT add extra sections, headers, prefaces, or commentary.
+  Do NOT use placeholders like “see above”, “as mentioned”, “ibid.”, “refer to earlier”, or “same as before”.
+  Do NOT omit any important information that appears in the input.
+
+  OUTPUT FORMAT (EXACT)
+  You must directly record the actual information content in plain text (not just summaries). Include:
+  0) Current Answer
+    - Provide the single best, most definite answer identified so far based on conclusive evidence. If no final answer is certain, state "None".
+  1) Facts & Evidence Collected
+    - List every factual item discovered. Attach a source annotation: [Source: <tool/doc> | <URL/id> | Verified: yes/no/partial].
+  2) Analysis & Conclusions
+    - State all logical conclusions derived, explicitly linking each to the supporting evidence IDs from section (1).
+  3) Source Inventory & Verification Status
+    - Enumerate all visited sources and evaluate their current verification status.
+  4) Uncertainties, Limitations, Gaps
+    - List all unknown variables, data ambiguities, and failure modes currently blocking a final decision.
+
+  QUALITY RULES
+  - Be exhaustive over the input: no omissions.
+  - Keep claims tightly tied to evidence; if you infer, label it “Inference” and explain why.
+  - If sources conflict, present both and state which you trust more (and why).
+model:
+  model_name: default
+  api_key: EMPTY
+  max_context_length: 122880 # 128K - 8K
+  enable_qps_limit: false
+  tools:
+    - search
+    - visit
+
+
+
