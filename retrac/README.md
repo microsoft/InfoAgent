@@ -1,31 +1,14 @@
 # Re-TRAC: Recursive Trajectory Compression for Deep Research Agents
 
-<!-- <div align="center">
-  <picture>
-      <img src="./assets/logo.png" width="100%">
-  </picture>
-</div> -->
-
-<!-- <hr> -->
-
-<!-- <div align="center" style="line-height: 1;"> -->
-
-<!-- [![PAPER](https://img.shields.io/badge/Paper-red?style=for-the-badge&logo=arxiv&logoColor=white)]([TODO: arxiv_url])
-[![GITHUB](https://img.shields.io/badge/Github-24292F?style=for-the-badge&logo=github&logoColor=white)]([TODO: repo_url])
-[![MODELS](https://img.shields.io/badge/Models-5EDDD2?style=for-the-badge&logo=huggingface&logoColor=ffffff&labelColor)]([TODO: hf_url])
-[![DEMO](https://img.shields.io/badge/Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)]([TODO: project_url]) -->
-
 </div>
 <p align="center">
-🤗 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">HuggingFace(comming soon)</a> ｜
+🤗 <a href="https://huggingface.co/microsoft/InfoAgent">Model Checkpoint</a> ｜
 💻 <a href="https://github.com/microsoft/InfoAgent/tree/main/retrac">GitHub</a> | 
 📑 <a href="https://arxiv.org/abs/2602.02486">Paper</a> | 
 🌐 <a href="https://huggingface.co/spaces/JialiangZhu/RE-TRAC">Demo</a>
 
-> You Can Try our [RE-TRAC 30B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now 
-
-<!-- > [!NOTE]
-> This demo is for quick exploration only. Response times may vary or fail intermittently due to model latency and tool QPS limits. For a stable experience we recommend local deployment. -->
+> You Can Try our [RE-TRAC 30B-A3B](https://huggingface.co/spaces/JialiangZhu/RE-TRAC) Domo now <br>
+> We have released [Re-TRAC 30B-A3B](https://huggingface.co/microsoft/InfoAgent) checkpoint.
 
 ## Introduction
 
@@ -55,14 +38,9 @@ Code and checkpoints are **coming soon (pending approval)**.
 
 |            Model            |                                                                           Download Links                                                                           | Model Size |
 | :-------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------: |
-| Re-TRAC-SFT-30B | [🤗 HuggingFace]([])<br> *Coming soon* |  30B   |
-| Re-TRAC-SFT-4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
+| Re-TRAC 30B-A3B | [🤗 HuggingFace](https://huggingface.co/microsoft/InfoAgent)<br> |  30B   |
+| Re-TRAC 4B | [🤗 HuggingFace]([])<br> *Coming soon* |  4B   |
 
-<!-- # News
-
-[2025/XX/XX]🚀 Re-TRAC paper released on arXiv. -->
-
-<!-- [2025/XX/XX]🔥 We have released **Re-TRAC-SFT-30B** and **Re-TRAC-SFT-4B** checkpoints. -->
 
 ## Benchmark Results
 
@@ -95,31 +73,72 @@ Comprehensive evaluation results across multiple benchmarks:
 | NestBrowse-4B | 22.4 | 28.4 | 68.9 | 74.0 | - |
 | **RE-TRAC-4B (Ours)** | **30.0** | **36.1** | **70.4** | **76.6** | **22.2** |
 
-<!-- ## SFT Models
-
-<p align="center">
-  <img width="100%" src="./assets/benchmark.png">
-</p>
-
-## Training Free for frontier model
-
-<p align="center">
-  <img width="100%" src="./assets/prompting_results.png">
-</p> -->
 
 ## Code and Resources
 
-Code and resources are **coming soon (pending approval)**. We are finalizing internal release approval for:
 
-- **Model Checkpoints**: 4B and 30B SFT models
-- **Inference Code**: Complete inference pipeline and scripts
-- **Reproduction Scripts**: Evaluation and reproduction configs
-- **Training Data**: Dataset used for supervised fine-tuning
-- **Training Code**: Training scripts and configurations
+### Model Deployment
+First, you need to download the model checkpoint from [HuggingFace](https://huggingface.co/microsoft/InfoAgent).
+
+We recommend to deploy the model via sglang version `0.5.7`.
+
+**IMPORTANT !!!** Do not use `reasoning parser` config in the `sglang` server.
+
+```bash
+python -m sglang_router.launch_server \
+    --model-path /path/to/your/model \
+    --dp 8 \
+    --tp 1 \
+    --tool-call-parser qwen
+```
+
+### initialize the environment
+```bash
+cd ./retrac
+uv venv
+uv pip install -r requirements.txt
+```
+### set the environment variables
+```bash
+cp .env.example .env
+```
+```bash
+# for openai format agent model in Re-TRAC (deploy via sglang or vllm)
+OPENAI_API_BASE=YOUR_OPENAI_API_BASE_HERE
+OPENAI_API_KEY=YOUR_OPENAI_API_KEY_HERE 
+
+# for search engine and browse tool
+SERPER_API_KEY=YOUR_SERPER_API_KEY_HERE # follow the instructions in https://serper.dev/
+JINA_API_KEY=YOUR_JINA_API_KEY_HERE # follow the instructions in https://jina.ai/
+
+# for summarization model in visit tool
+MODEL_FOR_VISIT_SUMMARIZE=MODEL_NAME_HERE_FOR_SUMMARIZE_MODEL_IN_VISIT_TOOL
+BASE_URL_FOR_VISIT_SUMMARIZE=YOUR_BASE_URL_HERE_FOR_SUMMARIZE_MODEL_IN_VISIT_TOOL
+API_KEY_FOR_VISIT_SUMMARIZE=YOUR_API_KEY_HERE_FOR_SUMMARIZE_MODEL_IN_VISIT_TOOL
+```
+
+### run the agent in streaming mode
+```bash
+cd ./retrac
+uv run run.py --config deep_research.yaml --question "What is the capital of France?"
+```
+
+### run the agent in non-streaming mode
+```bash
+cd ./retrac
+uv run run.py --config deep_research.yaml --question "What is the capital of France?" --non-streaming
+```
 
 If you want updates, please **Star / Watch** this repository!
 
+### optional : modify the config file in `deep_research.yaml`
 
+You can modify the config file in `retrac/deep_research.yaml` to change the max cycles, the prompts, etc. <br>
+
+```yaml
+max_cycles: 8 # we default set the max cycles to 8, you may change it to 2 or 4 for faster inference
+xxx_prompt: # you can modify the xxx_prompt to change the system prompt, the continue prompt, the summary prompt, for other tasks.
+```
 
 ## Citation
 

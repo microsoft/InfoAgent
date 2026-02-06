@@ -1,1 +1,3 @@
 .secret/*
+.env
+__pycache__/
